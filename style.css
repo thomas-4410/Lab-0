@@ -49,18 +49,22 @@ td {
   }
 
 
+
+
+  ol:hover{background-color: #ddd;}
+
+ul:hover{background-color: #ddd;}
+
 ol { 
     list-style: none; 
     counter-reset: num; 
 } 
-ol:hover{background-color: #ddd;}
-ul:hover{background-color: #ddd;}
 
 ol li { 
     counter-increment: num; 
 }  
   ol li::before { 
-    content: "0" counter(num) "."; 
+    content:counter(num) "."; 
     color: blue;     
 } 
 
@@ -89,3 +93,9 @@ ol li {
   }
 
   label { display: inline-block; width: 70px; text-align: right; }
+ 
+ img.myImage{
+  height: 210px;
+  width: 200px;
+  border-radius: 50%;
+ }
