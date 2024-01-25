@@ -87,3 +87,5 @@ ol li {
     background-color: grey;
     color: white;
   }
+
+  label { display: inline-block; width: 70px; text-align: right; }
