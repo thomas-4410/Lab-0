@@ -12,10 +12,16 @@
     font-weight: normal; 
     }
 
+    .container{
+      width: 1000px;
+      background-color: #fff;
+      margin: auto;
+
+    }
  h1 {
     color: navy;
     font-family: 'SeafordBold';
-    margin-left: 0px;
+    text-align: center;
   }
 
   h2 {
@@ -95,7 +101,7 @@ ol li {
   label { display: inline-block; width: 70px; text-align: right; }
  
  img.myImage{
-  height: 210px;
-  width: 200px;
+  height: 140px;
+  width: 150px;
   border-radius: 50%;
  }
