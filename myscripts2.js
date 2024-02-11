@@ -18,7 +18,9 @@ function Sum(){
     return total;
 }
 
-
+let dynamicVariable = 42;
+dynamicVariable = "Hello";
+console.log(dynamicVariable);
 
 console.log("Array sum: "+Sum());
 var myText = document.getElementById("myTextArea");
