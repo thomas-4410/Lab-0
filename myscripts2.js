@@ -4,7 +4,6 @@
 // 3. The browser opens up a source code page with multiple tabs; click on "Console."
 // 4. You can now test your code in the console.
 
-
 console.log("test");
 for(let i = 0; i< 5; i++){
     console.log(i+"\n");
@@ -19,22 +18,12 @@ function Sum(){
     return total;
 }
 
+
+
 console.log("Array sum: "+Sum());
-
-var emailTextBox = document.getElementById("email");
-var feedbackTextBox = document.getElementById("feedback");
-var button2 = document.getElementById("button2");
 var myText = document.getElementById("myTextArea");
-var submitButton =document.getElementById("mybutton");
 button2.onclick = function printText(){
-myText.value = emailTextBox.value;
-myText.value+="\n"+  feedbackTextBox.value;
-myText.value += "\nArray sum: "+ Sum();
+myText.value = "Array sum: "+ Sum();
 }
-
-submitButton.onclick = function printAlert(){
-    alert(emailTextBox.value+ "\n"+  feedbackTextBox.value);
-}
-
 
 
