@@ -11,6 +11,14 @@ function Sum(){
     }
     return total;
 }
+
+// test the logging on console by:
+// right clicking anywhere in the page. 
+// then click "inspect"
+// the browser open up a source code page that
+// has multiple tabs, click on "Console" 
+// and test the code in the console.
+
 console.log("Array sum: "+Sum());
 
 var emailTextBox = document.getElementById("email");
@@ -26,7 +34,6 @@ myText.value += "\nArray sum: "+ Sum();
 
 submitButton.onclick = function printAlert(){
     alert(emailTextBox.value+ "\n"+  feedbackTextBox.value);
-
 }
 
 
