@@ -1,0 +1,1 @@
+let x2: number = 10;

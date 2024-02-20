@@ -98,7 +98,7 @@ ol li {
     color: white;
   }
 
-  label { display: inline-block; width: 70px; text-align: right; }
+  label { display: inline-block; width: 100px; text-align: right; }
  
  img.myImage{
   height: 140px;

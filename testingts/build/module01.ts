@@ -1,16 +1,24 @@
-function addNumbers(x: number, y:number) {
-    return x + y;
-  }
-  console.log(addNumbers(3, 6));
+// https://www.typescriptlang.org/docs/
 
-  let x: number;   //* Explicitly declares x as a number type
-let y = 1;       //* Implicitly declares y as a number type
+let x: number;   //* Explicitly declares x as a number type
 x = 2;
-//y = "one";
+console.log(x);
 
-let z;           //* Declares z without initializing it
-z = 1;
- z = "one";
+let y = 1;       //* Implicitly declares y as a number type
+//y = "one";
+console.log(y);
+
+let z: any;           //* Excplicitly declares z with any 
+z = 10;
+z = "one";
+console.log(z);
+
+
+let k :unknown;
+k = 678;
+k = console.log(k);
+x =  k as number;
+
 
 let flag: boolean;
 let yes = true;
@@ -21,16 +29,63 @@ let empty = "";
 let abc = 'abc';
 
 
-let firstName: string = "Mateo";
-let sentence: string = `My name is ${firstName}.
-    I am new to TypeScript.`;
+let firstName: string = "John";
+let salary: number = 80000;
+let sentence: string = `My name is ${firstName} and my salary is ${salary}.`;
 console.log(sentence);
 
 
-let randomValue: any = 10;
-randomValue = 'Mateo';   // OK
-randomValue = true;      // OK
 
-console.log(randomValue.name);  // Logs "undefined" to the console
-randomValue();                  // Returns "randomValue is not a function" error
-randomValue.toUpperCase();      // Returns "randomValue is not a function" error
+// Interfaces
+interface Student{
+  name: string;
+  BuckID: number;
+  Phone: number;
+}
+
+let mas : Student = {name: 'MAS', BuckID: 1234567, Phone:777777777};
+console.log(mas.name+": "+ mas.BuckID + ", "+ mas.Phone)
+
+
+// Type Alias
+
+type num = number;
+let l: num;
+l = 20
+console.log(l);
+
+// Union types
+type mytype = string | num;
+let p: mytype = 100;
+console.log(p);
+p = "test string";
+console.log(p);
+ // p = true;
+ 
+
+function addNumbers(x: number, y:number) {
+  return x + y;
+}
+console.log("Sum: "+ addNumbers(3, 6));
+
+
+interface Employee{
+  name: string;
+  EID: number;
+  Phone: number;
+  address?: string;
+}
+
+let E1: Employee = {name: "MAS", EID: 12345, Phone: 7787789191};
+
+
+// let E2: Required <Employee> = {name: "MAS", EID: 12345, Phone: 7787789191};
+let E2: Required <Employee> = {name: "MAS", EID: 12345, Phone: 7787789191, address:"123 ST Name. Columbus, OH 43210"};
+
+
+let E3: Omit<Employee, "Phone"> = {name: "John", EID: 12543};
+// let E3: Omit<Employee, "Phone"> = {name: "John"};
+
+
+let E4: Pick<Employee, "EID"> = {EID: 12543 };
+// let E4: Pick<Employee, "EID"> = { name: "John", EID: 12543, Phone:7787789191 };
