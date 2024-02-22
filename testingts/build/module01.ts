@@ -52,15 +52,15 @@ console.log(mas.name+": "+ mas.BuckID + ", "+ mas.Phone)
 
 type num = number;
 let l: num;
-l = 20
+l = 20;
 console.log(l);
 
 // Union types
 type mytype = string | num;
 let p: mytype = 100;
-console.log(p);
+console.log("p as a number: "+ p);
 p = "test string";
-console.log(p);
+console.log("p as a string: "+ p);
  // p = true;
  
 

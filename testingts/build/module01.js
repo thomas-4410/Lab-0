@@ -29,9 +29,9 @@ var l;
 l = 20;
 console.log(l);
 var p = 100;
-console.log(p);
+console.log("p as a number: " + p);
 p = "test string";
-console.log(p);
+console.log("p as a string: " + p);
 // p = true;
 function addNumbers(x, y) {
     return x + y;
