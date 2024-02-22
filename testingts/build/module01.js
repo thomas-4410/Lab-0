@@ -18,7 +18,7 @@ var yes = true;
 var no = false;
 var s;
 var empty = "";
-var abc = 'abc';
+var abc = 'abcstring';
 var firstName = "John";
 var salary = 80000;
 var sentence = "My name is ".concat(firstName, " and my salary is ").concat(salary, ".");
@@ -37,6 +37,7 @@ function addNumbers(x, y) {
     return x + y;
 }
 console.log("Sum: " + addNumbers(3, 6));
+// Utility types
 var E1 = { name: "MAS", EID: 12345, Phone: 7787789191 };
 // let E2: Required <Employee> = {name: "MAS", EID: 12345, Phone: 7787789191};
 var E2 = { name: "MAS", EID: 12345, Phone: 7787789191, address: "123 ST Name. Columbus, OH 43210" };

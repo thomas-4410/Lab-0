@@ -2,6 +2,7 @@
 
 let x: number;   //* Explicitly declares x as a number type
 x = 2;
+
 console.log(x);
 
 let y = 1;       //* Implicitly declares y as a number type
@@ -26,7 +27,7 @@ let no = false;
 
 let s: string;
 let empty = "";
-let abc = 'abc';
+let abc = 'abcstring';
 
 
 let firstName: string = "John";
@@ -75,6 +76,8 @@ interface Employee{
   Phone: number;
   address?: string;
 }
+
+// Utility types
 
 let E1: Employee = {name: "MAS", EID: 12345, Phone: 7787789191};
 

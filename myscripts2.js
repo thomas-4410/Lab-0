@@ -70,14 +70,20 @@ button2.onclick = function printText(){
 myText.value = "Hello. This is a greeting";
 
 for (let i = 1; i <= 5; i++) {
-     myText.value+= "\n"+"Iteration: " + i; }
+    // myText.value += "\n"+"Iteration: " + i; 
+    if(i > 2){
+    console.log("Iteration "+ i);
+    }
+    }
+
 }
+
 
 
 document.getElementById("button2").addEventListener("click", function() { console.log("Button clicked!"); });
 
-myText.addEventListener("focusin",change2Grey);
-myText.addEventListener("focusout", change2White);
+myText.addEventListener("focusin",change2White);
+myText.addEventListener("focusout", change2Grey);
 function change2Grey(){
     myText.style="background-color: grey";
     console.log("MOUSE OVER");
@@ -91,6 +97,10 @@ function change2White(){
 let add = (a, b) => a + b;
 console.log(add(3, 5)); // Outputs: 8
 
+let multiply = (a,b, c) => a*b*c;
+myText.value = multiply(1,2,5);
+
+
 let name3 = "John";
 let Hi = `Hello, ${name3}!`;
 console.log(Hi); // Outputs: Hello, John!
@@ -98,6 +108,7 @@ console.log(Hi); // Outputs: Hello, John!
 
 let numbers = [1, 2, 3, 4];
 let [a, b, c] = numbers;
+console.log("Test de-structing: "); // Outputs: 1 2 3
 console.log(a,b,c); // Outputs: 1 2 3
 
 
