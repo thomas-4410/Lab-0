@@ -17,7 +17,7 @@ body {
 
 /* main content style */
 main {
-    padding: 60px;
+    padding: 30px;
 }
 
 /* navigation styles */
@@ -31,13 +31,13 @@ nav {
 nav a {
     color: #3ec45d;
     margin: 0 10px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* image style */
 img.myImage{
-    height: 140px;
-    width: 150px;
+    height: 170px;
+    width: 180px;
     border-radius: 50%;
    }
 
@@ -50,4 +50,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: underline;
 }
